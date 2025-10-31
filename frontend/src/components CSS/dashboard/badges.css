@@ -1,0 +1,9 @@
+.badges {
+    border: 2px solid black;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    height: 50px;
+    width: 54rem;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,16 @@
+.parent-box{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+    
+}
+
+.sidebar{
+    border: 2px solid black;
+    
+
+}
+
+.mainbody{
+    border: 2px solid black;
+}

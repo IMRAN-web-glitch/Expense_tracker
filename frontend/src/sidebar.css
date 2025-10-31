@@ -1,0 +1,69 @@
+/* Sidebar container */
+.main {
+  width: 200px;
+  background-color: #ffffff;
+  height: 100vh;
+  padding-top: 5px;
+  border-right: 1px solid #e5e7eb;
+  font-family: "Inter", sans-serif;
+}
+
+/* Remove default list styling */
+.main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each menu item */
+.main ul li {
+  margin: 10px 0;
+}
+
+/* NavLink styling */
+.main ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #374151;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.main ul li a:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+/* Active link (React Router's active class) */
+.main ul li a.active {
+  background-color: #0f172a; /* dark blue */
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Optional: add icons using emojis or your icon library */
+/* ye optional icons hai isko replace kr dena thodhe formal icon ke sath */
+.main ul li:nth-child(1) a::before {
+  content: "📊";
+}
+.main ul li:nth-child(2) a::before {
+  content: "💰";
+}
+.main ul li:nth-child(3) a::before {
+  content: "🐖";
+}
+.main ul li:nth-child(4) a::before {
+  content: "📘";
+}
+.main ul li:nth-child(5) a::before {
+  content: "💳";
+}
+.main ul li:nth-child(6) a::before {
+  content: "👤";
+}

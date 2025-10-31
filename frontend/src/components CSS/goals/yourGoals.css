@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+.yourGoals{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+
+    padding: 2.5em;
+    padding-top: 2em;
+
+    border: 2px solid grey;
+    border-radius: 15px;
+    
+    gap: 10px;
+    height: 60vh;
+}
+

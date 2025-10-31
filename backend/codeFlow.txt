@@ -1,0 +1,26 @@
+-> Hume pehle toh ek database apne users ka maintain karna padhega.
+
+-> Uske baad jo hamare users hai , usme har ek user ke saath ek expenses ki table associate karni padhegi.
+
+-> Jo ye wali har ek table hogi , agar database per user badha hone lagta hai ,
+    tab har ek category ke liye ek separate table maintain karni padhegi.
+
+-> Phir hume iss data ko mySQL se fetch karke apne alag-alag pages ko json format mai bhejna padhega , 
+    also appropirate tools use karke ek pie chart bhi banana padhega... (monthly and yearly kar sakte hai)
+
+-> Isme ek aur feature daalenge jisme hum log no. of rows displayed bhi daalenge , jaisa SIH wale portal pr tha...mtlb ki  
+    ek baar mai 10, 20, 50 ya 100 rows display hongi and agar no. bohot hi zyada badha ho jaiga toh corrousel effect daalenge.
+
+-> Jab expenses add karenge , phir woh table mai dikhai denge , tab hume uss data ko edit/update karne ka bhi option dena padhega
+    jo ki har ek row ke saamne ek pen wale icon mai dikh rha hoga
+
+-> Similarly , ek delete/remove karne ka option bhi dena padhega for every row.
+
+-> Isme hume ek option at the top of the table bhi dena padhega to delete the whole table.
+
+-> Jo hum log user ka data store karvainge , uske liye bhi edit, rename wagerah wale option daalne padhenge, ek user ke liye
+    bhi profile page banainge jo dashboard se alag hoga...
+
+-> Jo humne table banayi hai usme schema ke under DATE hai , uske andar default value add karni padhegi which will be current date , 
+    also check constraint bhi daalna padhega jisse future date na daali jaa sake.
+

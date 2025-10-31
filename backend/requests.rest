@@ -1,0 +1,51 @@
+GET http://localhost:8080/expenses
+Content-Type: application/json
+
+###
+GET  http://localhost:8080/user/1/pieChart
+Content-Type: application/json
+
+
+[
+  {
+    "Expense_id": 1,
+    "Amount": 20000,
+    "Category": "food",
+    "Date_of_expense": "2023-10-01",
+    "User_id": 1,
+    "Note": "Went on a dinner with family"
+  },
+  {
+    "Expense_id": 2,
+    "Amount": 20400,
+    "Category": "other",
+    "Date_of_expense": "2023-10-02",
+    "User_id": 2,
+    "Note": "Did some miscellaneous shopping"
+  },
+  {
+    "Expense_id": 3,
+    "Amount": 30020,
+    "Category": "food",
+    "Date_of_expense": "2023-10-03",
+    "User_id": 3,
+    "Note": ""
+  },
+  {
+    "Expense_id": 4,
+    "Amount": 100300,
+    "Category": "utilies",
+    "Date_of_expense": "2023-10-04",
+    "User_id": 4,
+    "Note": "Bought cooker for home"
+  },
+  {
+    "Expense_id": 5,
+    "Amount": 3000,
+    "Category": "Entertainment",
+    "Date_of_expense": "2023-10-05",
+    "User_id": 5,
+    "Note": "Went to watch movies with friends"
+  }
+]
+

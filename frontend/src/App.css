@@ -1,0 +1,25 @@
+
+
+/* Flex container for sidebar + content */
+.container {
+  display: flex;
+  min-height: 100vh; /* Make it full height */
+}
+
+/* Sidebar styling */
+.main { /* Assuming your Sidebar div has className="main" */
+  width: 200px; /* Set sidebar width */
+  background-color: #1e1e2f; /* Example color */
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.page-content {
+  flex: 1;               /* take remaining space */
+  padding: 20px;
+  padding-top: 10px;
+  background-color: white;
+}
+
