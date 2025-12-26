@@ -1,9 +1,12 @@
 
 .history{
+    width: 90%;
     margin-top: 3vh;
-    border: 2px solid rgb(220, 218, 218);
+    /* border: 2px solid rgb(220, 218, 218); */
     border-radius: 10px;
     padding: 1em;
+    box-shadow:  4px 10px rgba(0,0,0,0.05)
+
 }
 
 .heading{

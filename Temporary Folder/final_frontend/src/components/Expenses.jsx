@@ -41,7 +41,7 @@ function Expenses() {
         setFormData(initialData);
     }
 
-    const handleEdit = () => {
+    const handleEdit = (exp) => {
         const fakeExpense = {
             expense_id: 1,
             name: "Groceries",
@@ -99,8 +99,8 @@ function Expenses() {
                 />
                 <br /><br />
                 <button>Submit Form</button>
-                <button type="button" onClick={handleEdit}>Edit</button>
-
+                <button type="button" onClick={handleEdit()}>Edit</button>
+ 
             </form>
             {selectedExpense && (
                 <SmallForm

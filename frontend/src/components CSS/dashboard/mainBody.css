@@ -4,4 +4,8 @@
 
 .largeBoxContainer {
     display: flex;
+    justify-content: center;
+}
+.page-content{
+    background-color: #f9fafc;
 }

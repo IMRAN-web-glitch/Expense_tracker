@@ -5,10 +5,10 @@ function SmallForm({ expenseData, onClose }) {
   const [formData, setFormData] = useState({
     Expense_id: expenseData.expense_id,
     Category: expenseData.name,
-    Amount: expenseData.amount,
+    Amount: expenseData.amount, 
     Date_of_expense: expenseData.date,
   });
-
+   
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -17,7 +17,7 @@ function SmallForm({ expenseData, onClose }) {
   async function handleSave() {
     try {
       onClose(); // close form
-      let response = await fetch("http://localhost:8080/expenses", {
+      let response = await fetch(`http://localhost:8080/expenses/${formData.expense_id}`, {
         method: "PUT",
         headers: { "Content-Type": 'application/json' },
         body: JSON.stringify(formData)

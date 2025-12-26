@@ -1,5 +1,336 @@
-.learn{
+.learn {
     display: flex;
     flex-direction: column;
     gap: 2vh;
+}
+
+.loan_repayment {
+    border-radius: 0.7em;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+
+}
+
+/* SIP */
+/* --- Global Wrapper --- */
+.learn.contents {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* --- Main Title (SIP) --- */
+.main-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* --- Card Container --- */
+.investment-tracker-container {
+    background-color: #f7fcf8;
+    /* Light background matching the image */
+    border: 2px solid #e0f0e0;
+    /* Subtle green border */
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 400px;
+    /* Constrain width for a card look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    /* Center the card */
+}
+
+/* --- Header Styling --- */
+.tracker-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #00796B;
+    /* Dark teal/green color for header */
+}
+
+.tracker-header .icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.tracker-header h1 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* --- Body Text and List --- */
+.tracker-body p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #4A4A4A;
+    margin-bottom: 15px;
+}
+
+.tracker-body .intro-text {
+    font-weight: 250;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Styling for the list items (now implemented as p tags) */
+.list-item {
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.list-item::before {
+    content: "•";
+    color: #00796B;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* --- Example Box Styling (Blue accent) --- */
+.example-box {
+    border-left: 4px solid #1A73E8;
+    /* Distinct blue line */
+    background-color: #E8F0FE;
+    /* Very light blue background */
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.example-text {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0;
+}
+
+/* --- Tip Box Styling (Yellow accent) --- */
+.tip-box {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.tip-icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.tip-text {
+    font-size: 0.85rem;
+    color: #4A4A4A;
+    margin: 0;
+}
+
+/* --- Visualization Idea --- */
+.visualization-idea {
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+/* --- CTA Button (Matching the image) --- */
+.cta-button {
+    background-color: #6AA84F;
+    /* Green color from image */
+    color: white;
+    font-weight: 700;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    box-shadow: 0 4px 0 #4C7836;
+    /* Darker green shadow for 3D effect */
+    transition: all 0.1s ease;
+    display: block;
+    /* Make button full width of its container for consistent spacing */
+    width: fit-content;
+}
+
+.cta-button:active {
+    box-shadow: 0 1px 0 #4C7836;
+    transform: translateY(3px);
+}
+
+
+/* EMERGENCY FUND  */
+.emergency-fund-container {
+    font-family: Arial, sans-serif;
+    background-color: #f7fcf8;
+    border: 2px solid #e0f0e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* margin: 20px auto; */
+    /* align-self: flex-end; */
+
+
+    
+}
+
+/* --- Header Styling --- */
+.fund-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #4A4A4A;
+}
+
+.fund-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #DAA520;
+}
+
+.fund-header h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* --- Body Text Styling --- */
+.fund-body p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #4A4A4A;
+    margin-bottom: 12px;
+}
+
+.fund-body .intro-text {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.fund-body .info-text {
+    margin-bottom: 10px;
+    f
+}
+
+/* --- Example Box Styling (Blue accent) --- */
+.example-box-emergency {
+    border-left: 4px solid #1A73E8;
+    background-color: #E8F0FE;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+
+.example-text-emergency {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* --- Tip Box Styling (Light Green accent) --- */
+.tip-box-emergency {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background-color: #e6ffe6;
+    border-radius: 4px;
+}
+
+.tip-icon-emergency {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    flex-shrink: 0;
+    color: #FFA500;
+}
+
+.tip-text-emergency {
+    font-size: 0.85rem;
+    color: #4A4A4A;
+    margin: 0;
+}
+
+/* --- Visualization Idea --- */
+.visualization-idea-emergency {
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+}
+
+.icon-emergency {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    flex-shrink: 0;
+    color: #6B7280;
+}
+
+/* --- CTA Button (Matching the image) --- */
+.cta-button-emergency {
+    background-color: #4285F4;
+    color: white;
+    font-weight: 700;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 25px;
+    box-shadow: 0 4px 0 #1A73E8;
+    transition: all 0.1s ease;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button-emergency:active {
+    box-shadow: 0 1px 0 #1A73E8;
+    transform: translateY(3px);
+}
+
+.learn-contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+
+}
+.investment{
+        border-radius: 0.7em;
+    padding: 1.5rem; /* Increased padding for better spacing */
+    background-color: white;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); Slightly heavier shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* max-width: 450px; Constrain width for a cleaner look */
+    /* margin: 0 auto; Center the container */
+    font-family: 'Arial', sans-serif;
+    
+}
+.investment h3{
+   font-size:  1.5rem;
+}
+.invest-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.interestCalculator{
+    max-width: fit-content;
+    max-height: fit-content;
+
 }

@@ -10,17 +10,17 @@ function Mainbody() {
                 <SmallBoxes info="Total spent : 600" />
                 <SmallBoxes info="Goals : 1" />
                 <SmallBoxes info="Saved towards goals : 600" />
-                <SmallBoxes info="Learn points : 400" />
+                {/* <SmallBoxes info="Learn points : 400" /> */}
             </div>
            
             <div className="largeBoxContainer">
                 <LargeBoxes info="Spending by category" />
-                <LargeBoxes info="Monthly Spending" />
+                {/* <LargeBoxes info="Monthly Spending" /> */}
             </div>
 
-            <div>
+            {/* <div>
                 <Badges />
-            </div>
+            </div> */}
             
         </div>
     );

@@ -16,7 +16,7 @@ function WalletSim() {
     }
     return (
         <div>
-            <VirtualWallet addData = {whenAddData} resetData={resetData}/>
+            {/* <VirtualWallet addData = {whenAddData} resetData={resetData}/> */}
             <History data={rows}/>
 
         </div>

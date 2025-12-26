@@ -1,0 +1,162 @@
+/* 
+border-radius: 0.7em;
+    padding: 1em;   
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+     */
+
+
+/* .emergencyFund{
+
+    
+    border-radius: 0.7em;
+    padding: 1em;   
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+   
+
+}
+.investment{
+
+    border-radius: 0.7em;
+    padding: 1rem;   
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    
+
+} */
+
+
+
+
+/* Main container styling (mostly from your original code) */
+.emergencyFund {
+    border-radius: 0.7em;
+    padding: 1.5rem; /* Increased padding for better spacing */
+    background-color: white;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); Slightly heavier shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 450px; /* Constrain width for a cleaner look */
+    /* margin: 0 auto; Center the container */
+    font-family: 'Arial', sans-serif;
+    width: 600px;
+    
+}
+
+/* Header Styling */
+.Emergency-box1 h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 2rem; /* Separation from inputs */
+    color: #333;
+}
+
+/* Input/Label Container Styling */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 1.5rem;
+}
+
+.Emergency-box2 label {
+    font-weight: 500;
+    color: #4a4a4a;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    display: block; /* Ensures label takes full width */
+}
+
+.Emergency-box2 input[type="text"] {
+    width: 100%; /* Full width inputs */
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Include padding/border in element's width */
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.2s;
+}
+
+.Emergency-box2 input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+/* Error message styling */
+.error-message {
+    color: #dc3545 !important;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+/* Button Group Styling */
+.Emergency-box3 {
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Emergency-box3 button {
+    flex-grow: 1; /* Make buttons grow to fill space */
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Dark themed buttons */
+.Emergency-box3 button {
+    background-color: #343a40; /* Dark background */
+    color: white;
+}
+
+.Emergency-box3 button:hover {
+    background-color: #495057;
+}
+
+.Emergency-box3 button:active {
+    transform: translateY(1px);
+}
+
+/* Progress Bar and Label Styling */
+.Emergency-box4 {
+    margin-top: 1.5rem;
+}
+
+.Emergency-box4 input[type="range"] {
+    width: 100%;
+    /* Custom styling for range input to match the clean look */
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #e9ecef; /* Light track */
+    border-radius: 5px;
+    margin-bottom: 0.75rem;
+}
+
+.Emergency-box4 input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #007bff; /* Blue thumb */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Emergency-box4 label {
+    font-size: 1rem;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+.investment-box1 h3{
+    color: #333;
+;
+}
+

@@ -14,23 +14,28 @@ function LogIn({ toSignUp }) {
     async function handleFormSubmit(event) {
         event.preventDefault();
         try {
-            let response = await fetch(`https://hz6wg8cv-8080.inc1.devtunnels.ms/login`, {
+            let response = await fetch(`${import.meta.env.VITE_BACKEND_URL}login`, {
                 method: "POST",
                 headers: { "Content-Type": 'application/json' },
                 body: JSON.stringify(formData)
             });
+
             const data = await response.json();
-            console.log(data.message);
+            console.log(data);
+            console.log(data.accesstoken);
+            console.log(data.User_id);
+
+            localStorage.setItem("accesstoken",data.accesstoken);
+            localStorage.setItem("User_id",data.User_id);
+
             if (response.ok && data.success) {
                 navigate("/dashboard");
             } else {
-
                 alert(data.message);
             }
         } catch (error) {
             console.log(error);
         }
-        console.log("Form submitted", formData);
     }
 
     function handleInputChange(event) {
@@ -43,7 +48,7 @@ function LogIn({ toSignUp }) {
 
 
     return (
-        <div className="log-in">
+        <div className="log-in glass-card">
             <div className="login-text">
                 <h1>Welcome Back!</h1>
                 <p id="login-para">Log in to Access Your Financial Dashboard.</p>
@@ -51,6 +56,7 @@ function LogIn({ toSignUp }) {
             <form onSubmit={handleFormSubmit}>
                 <label htmlFor="username" className="login-form-text">Username</label>
                 <input
+                    required
                     type="text"
                     id="username"
                     placeholder="eg. john_doe"
@@ -60,6 +66,7 @@ function LogIn({ toSignUp }) {
                 />
                 <label htmlFor="email" className="login-form-text">Email</label>
                 <input
+                    required
                     type="email"
                     id="email"
                     placeholder="eg. john@gmail.com"
@@ -69,6 +76,8 @@ function LogIn({ toSignUp }) {
                 />
                 <label htmlFor="password" className="login-form-text">Password</label>
                 <input
+                    required
+                    minLength="6"
                     type="password"
                     id="password"
                     placeholder="your password"

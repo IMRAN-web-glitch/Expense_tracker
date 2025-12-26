@@ -4,7 +4,7 @@ import Mainbody from "./Mainbody";
 function Dashboard() {
     return (
     <div>
-      <h3>Dashbord</h3>
+      <h3 id="heading-dashboard">Dashbord</h3>
       <Mainbody />
     </div>
     );

@@ -1,6 +1,7 @@
 .parent-box{
     display: grid;
     grid-template-columns: 1fr 3fr;
+    /* background-color: aqua; */
     
     
 }
@@ -13,4 +14,14 @@
 
 .mainbody{
     border: 2px solid black;
+    
+}
+
+
+#heading-dashboard{
+    margin-left: 6vh;
+}
+
+.page-content{
+    padding:2rem;
 }

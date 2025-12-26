@@ -2,15 +2,16 @@ import "../../components CSS/expenses/addExpense.css";
 import { useState } from "react";
 
 
-function Addexpense() {
+function Addexpense({ setrefresh, refresh }) {
     let initialData = {
         Amount: "",
         Category: "",
         Date_of_expense: "",
+        Note: ""
     }
 
     let [formData, setFormData] = useState(initialData);
-    // const [selectedExpense, setSelectedExpense] = useState(null); added on list
+
 
     function handleInputChange(event) {
         let fieldName = event.target.name;
@@ -23,15 +24,22 @@ function Addexpense() {
     async function handleFormSubmit(event) {
         event.preventDefault();
         // userID is hard-coded , this will actually be fetched from body.params
-        let userID = 1; 
+        let userID = localStorage.getItem("User_id")
+        // let userID= 6
         try {
-            let response = await fetch(`http://localhost:8080/user/${userID}/expenses`, {
+            let response = await fetch(`${import.meta.env.VITE_BACKEND_URL}user/${userID}/expenses`, {
                 method: "POST",
-                headers: { "Content-Type": 'application/json' },
+                headers: {
+                    "Content-Type": 'application/json',
+                    "Authorization": `Bearer ${localStorage.getItem("accesstoken")}`
+                },
                 body: JSON.stringify(formData)
             });
             if (!response) throw "Error in response";
             console.log(response);
+
+            // Authorization : Bearer accessToken
+            setrefresh(!refresh);
 
         } catch (error) {
             console.log(error);
@@ -41,19 +49,14 @@ function Addexpense() {
         setFormData(initialData);
     }
 
-    const handleEdit = () => {
-        const fakeExpense = {
-            expense_id: 1,
-            name: "Groceries",
-            amount: 1500,
-            date: "2025-10-20"
-        };
-        setSelectedExpense(fakeExpense); // show form
-    };
+
+
     return (
         <form onSubmit={handleFormSubmit}>
             <div className="addExpense">
+
                 Add Expense <br /><br />
+
                 <label htmlFor="Amount">Amount</label>
                 <input
                     type="text"
@@ -64,8 +67,8 @@ function Addexpense() {
                     onChange={handleInputChange}
                 />
                 &nbsp;
-                <label htmlFor="Category">category</label>
 
+                <label htmlFor="Category">category</label>
                 <select
                     name="Category"
                     id="Category"
@@ -82,7 +85,9 @@ function Addexpense() {
                     <option value="Health">Health</option>
                     <option value="Misc.">Misc.</option>
                 </select>
+
                 &nbsp;&nbsp;
+
                 <label htmlFor="date">date</label>
                 <input
                     type="date"
@@ -91,11 +96,23 @@ function Addexpense() {
                     value={formData.Date_of_expense}
                     onChange={handleInputChange}
                 />
+
+
                 <br /><br />
+
                 <div style={{ display: "flex" }}>
-                    <input type="text" placeholder="Note(optional)" />&nbsp;
-                    <button>Add</button>&nbsp;
+                    <label htmlFor="Note">Note</label>
+                    <input
+                        type="text"
+                        id="Note"
+                        name="Note"
+                        value={formData.Note}
+                        onChange={handleInputChange}
+                    />&nbsp;
+                    <button >Add</button>&nbsp;
+                    {/* <button>Edit</button>&nbsp; */}
                 </div>
+
             </div>
         </form>
     );

@@ -1,0 +1,127 @@
+.profile-container {
+  padding: 2rem;
+  background: #f9fafc;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.profile-avatar {
+  font-size: 4rem;
+  color: #3b82f6;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.email {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.badge {
+  background-color: #cfd4da;
+  color: #01040d;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.wallet-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.wallet-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.wallet-box h3 {
+  margin: 0.3rem 0;
+}
+
+.wallet-box p {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+/* Colors */
+.balance svg { color: #3b82f6; }
+.earned svg { color: #16a34a; }
+.spent svg { color: #dc2626; }
+.saved svg { color: #eab308; }
+
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.personal-info, .quick-actions {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.personal-info p {
+  margin: 6px 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.action-buttons button, .bottom-actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+
+  background-color: black;
+}
+
+.deposit { background: #3b82f6; }
+.transfer { background: #16a34a; }
+.edit { background: #0284c7; }
+.logout { background: #f59e0b; }
+.delete { background: #dc2626; }
+
+.bottom-actions {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .wallet-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile-details {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,9 +1,13 @@
 .smallBoxes {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-left: 2rem;
-    padding: 0.5rem;
-    height: 50px;
-    width: 11rem;
+    padding: 0.6rem;
+    padding-top: 0.4rem;
+    height: fit-content;
+    width: fit-content;
     text-align: center;
     border-radius: 0.5rem;
+    
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }

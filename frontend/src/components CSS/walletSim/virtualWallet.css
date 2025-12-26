@@ -1,17 +1,28 @@
 * {
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
 }
 
-.virtualWallet{
-    border: 2px solid rgb(220, 218, 218);
-    border-radius: 10px;
-    padding: 1em;
+.subset{
+    display: flex;
 }
+.virtualWallet{
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow:  4px 10px rgba(0,0,0,0.05)
+    
+}
+.virtualWallet h1{
+    justify-self: center;
+    font-size: 30px;
+}
+
 
 
 .reset {
-    color: rgb(255, 0, 0);
-    background-color: rgb(253, 196, 196);
+    color: rgb(255, 252, 252);
+    background-color: rgb(233, 40, 40);
     font-weight: 700;
     padding: 0.2em 1em 0.2em 1em;
 
@@ -19,7 +30,9 @@
     border: 0;
 
 }
-
+.reset:hover{
+    background-color: rgb(112, 1, 1);
+}
 form {
     display: flex;
     flex-wrap: wrap;
@@ -32,3 +45,26 @@ form {
     flex-wrap: wrap;
     gap: 3vw;
 }
+.form-buttons input{
+    width: fit-content;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.earn{
+    background-color: green;
+    color: white;
+    border: none;
+}
+.spend{
+    background-color: rgb(228, 217, 21);
+    color: white;
+    border: none;
+}
+.save{
+    background-color: rgb(17, 146, 137);
+    color: white;
+    border: none;
+}
+

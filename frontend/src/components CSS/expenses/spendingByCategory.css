@@ -1,7 +1,14 @@
 .spendingByCategory {
-    height: 100px;
-    border: 2px solid black;
-    margin-left: 20rem;
-    margin-right: 10rem;
+    /* border: 2px solid black; */
+    /* margin-left: 20rem;
+    margin-right: 10rem; */
     margin-top: 2rem;
+    padding: 2em;
+    border-radius: 1rem;
+
+    width: -webkit-fill-available;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+    font-size: medium;
 }

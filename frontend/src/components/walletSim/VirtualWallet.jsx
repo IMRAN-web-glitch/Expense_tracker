@@ -72,6 +72,7 @@ function VirtualWallet({addData,resetData}) {
             <form onSubmit={handleSubmit}>
                 <input type="text" name="walletAmount" placeholder="Amount" 
                 value={amount} 
+                className="amount-box"
                 onChange = {(e) => 
                 setAmount(+(e.target.value))}
                 />
@@ -82,19 +83,24 @@ function VirtualWallet({addData,resetData}) {
                 }
                 />
                 <div className="form-buttons">
-                    <input type="submit" name="earn" 
+                    <input type="submit" name="earn"
+                    className="earn" 
                     value="Earn" 
                     onClick = {(e) =>
                         setSpendType(e.target.value)}
                     />
 
                     <input type="submit" name="spend" 
+                    className="spend" 
+
                     value="Spend" 
                     onClick = {(e) =>
                         setSpendType(e.target.value)}
                     />
 
                     <input type="submit" name="save" 
+                    className="save" 
+
                     value="Save"
                     onClick = {(e) =>
                         setSpendType(e.target.value)}
