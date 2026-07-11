@@ -8,7 +8,7 @@ import ExpenseGoal from "./ExpenseGoal";
 import EmergencyFund from "./EmergencyFund";
 import Investment from "./Investment";
 import LoanRepayment from "./LoanRepayment";
-import InvestmentInfo from "./investmentInfo";
+import InvestmentInfo from "./InvestmentInfo";
 import EmergencyInfo from "./EmergencyInfo";
 
 
